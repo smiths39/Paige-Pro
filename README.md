@@ -11,7 +11,7 @@ The application provides access to the following features:<br />
     6) Calendar / Event storage<br /><br />
         
 <b>Please note: </b><br />
-\* A minimute requirement of API 14 is required for the successful functionality of this application.
+\* A minimute requirement of API 14 (Android version 4.0 or greater) is required for the successful functionality of this application.
         
 \* Ensure that a folder entitle 'sdcard' is created within your devices files<br />
 >>  - Store .mp3 files within this folder in order to retrieve and play files within 
