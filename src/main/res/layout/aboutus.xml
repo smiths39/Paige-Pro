@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/paigepro_background" >
+
+        <TextView
+            android:id="@+id/tvAboutUsTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="About Us"
+            android:textSize="30dp"
+            android:textStyle="italic"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:fontFamily="sans-serif-condensed"
+            android:lines="2" />
+
+        <ImageView
+            android:id="@+id/imAboutUs"
+            android:layout_width="145dp"
+            android:layout_height="115dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:lines="2"
+            android:src="@drawable/about_us" />
+
+        <TextView
+            android:id="@+id/spacing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="2" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shrinkColumns="0" >
+
+            <TextView
+                android:id="@+id/tvModuleInformation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Module Information"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:fontFamily="sans-serif-condensed"
+                android:lines="2" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvModuleCodeID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Module Code: "
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/tvModuleCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="CA494" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvModuleTitleID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Module Title: "
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/tvModuleTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Developing Mobile Applications" />
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/spacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2" />
+
+            <TextView
+                android:id="@+id/tvAboutUsTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="App Author"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:fontFamily="sans-serif-condensed"
+                android:lines="2" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvStudentNameID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student Name: "
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/tvStudentName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Sean Smith" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvStudentNumberID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student ID: "
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/tvStudentNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="10339513" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvStudentPlatformID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student Platform: "
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/tvStudent1Platform"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Android" />
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/spacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2" />
+
+            <TextView
+                android:id="@+id/tvAboutUsTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Original App Team"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:fontFamily="sans-serif-condensed"
+                android:lines="2" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvAppNameID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="App Name: "
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/tvAppName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="PaigePro" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvAppTeamNameID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="App Team Name: "
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/tvAppTeamName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="The Deterministic Finite Automatas" />
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/spacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvStudent1NameID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student 1 Name: "
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/tvStudent1Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Sean Smith" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvStudent1NumberID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student 1 ID: "
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/tvStudent1Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="10339513" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvStudent1PlatformID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student 1 Platform: "
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/tvStudent1Platform"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Android" />
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/spacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvStudent2NameID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student 2 Name: "
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/tvStudent2Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Peter Conroy" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvStudent2NumberID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student 2 ID: "
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/tvStudent2Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="57676646" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvStudent2PlatformID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student 2 Platform: "
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/tvStudent2Platform"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="iOS" />
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/spacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvStudent3NameID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student 3 Name: "
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/tvStudent3Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Meabh Landers" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvStudent3NumberID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student 3 ID: "
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/tvStudent3Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="10387011" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvStudent3PlatformID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student 3 Platform: "
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed" />
+
+                <TextView
+                    android:id="@+id/tvStudent3Platform"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Windows" />
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/spacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2" />
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>

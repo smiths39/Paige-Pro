@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paigepro_background"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/LinearLayout1" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/journalTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <AnalogClock
+                            android:id="@+id/analogClockMenu"
+                            android:layout_height="70dp"
+                            android:layout_width="70dp"
+                            android:layout_gravity="right|top" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="20dp"
+                            android:textSize="20dp"
+                            android:id="@+id/currentTimeMenu"
+                            android:layout_gravity="center_horizontal|top" />
+
+                        <Button
+                            android:layout_width="135dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="90dp"
+                            android:layout_marginLeft="120dp"
+                            android:drawableLeft="@drawable/memo_icon"
+                            android:text="Memo"
+                            android:id="@+id/bMemoNew" />
+
+                        <Button
+                            android:layout_width="135dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="190dp"
+                            android:drawableLeft="@drawable/photo_icon"
+                            android:text="Photo"
+                            android:id="@+id/bPhotoNew" />
+
+                        <Button
+                            android:layout_width="135dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="210dp"
+                            android:layout_marginTop="190dp"
+                            android:drawableLeft="@drawable/video_icon"
+                            android:text="Video"
+                            android:id="@+id/bVideoNew" />
+
+                        <Button
+                            android:layout_width="135dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="290dp"
+                            android:drawableLeft="@drawable/audio_icon"
+                            android:text="Audio"
+                            android:id="@+id/bAudioNew" />
+
+                        <Button
+                            android:layout_width="135dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="210dp"
+                            android:layout_marginTop="290dp"
+                            android:drawableLeft="@drawable/link_icon"
+                            android:text="Links"
+                            android:id="@+id/bLinkNew" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/eventCalendarTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <AnalogClock
+                            android:id="@+id/analogClockMenu"
+                            android:layout_height="70dp"
+                            android:layout_width="70dp"
+                            android:layout_gravity="right|top" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="20dp"
+                            android:textSize="20dp"
+                            android:id="@+id/currentTimeCalendar"
+                            android:layout_gravity="center_horizontal|top" />
+
+                        <Button
+                            android:layout_width="135dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="90dp"
+                            android:layout_marginLeft="120dp"
+                            android:text="View Calendar"
+                            android:id="@+id/bViewCalendar" />
+
+                        <Button
+                            android:layout_width="135dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="190dp"
+                            android:layout_marginLeft="32dp"
+                            android:text="Create Calendar"
+                            android:id="@+id/bCreateCalendar" />
+
+                        <Button
+                            android:layout_width="135dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="210dp"
+                            android:layout_marginTop="190dp"
+                            android:text="Create Event"
+                            android:id="@+id/bCreateEvent" />
+
+                        <Button
+                            android:layout_width="135dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="290dp"
+                            android:text="Delete Event"
+                            android:id="@+id/bDeleteEvent" />
+
+                        <Button
+                            android:layout_width="135dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="210dp"
+                            android:layout_marginTop="290dp"
+                            android:text="Edit Event"
+                            android:id="@+id/bEditEvent" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </TabHost>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/paigepro_background"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bAddMemo"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="Create Memo"
+        android:drawableLeft="@drawable/memo_logo" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#000000"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

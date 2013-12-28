@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/paigepro_background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <EditText
+            android:id="@+id/etURL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/bGo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:text="Go"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="8" >
+
+        <Button
+            android:id="@+id/bBack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Go Back"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/bForward"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Go Forward"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/bRefresh"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Refresh"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/bHistory"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Clear History"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="8" >
+
+        <Button
+            android:id="@+id/bBookmark"
+            android:layout_width="160dp"
+            android:layout_height="39dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="2dp"
+            android:text="Bookmark Page"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/bBookmarkList"
+            android:layout_width="160dp"
+            android:layout_height="39dp"
+            android:layout_weight="2"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:text="Display Bookmarks"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            android:layout_marginBottom="5dp" />
+
+    </LinearLayout>
+
+    <WebView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/wvBrowser" />
+
+</LinearLayout>

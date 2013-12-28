@@ -1,0 +1,20 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/paigepro_background"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bAddPhoto"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="Add Photo"
+        android:drawableLeft="@drawable/camera_logo" />
+
+    <ListView
+        android:id="@+id/lvPhoto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

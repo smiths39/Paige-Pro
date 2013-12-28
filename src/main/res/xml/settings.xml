@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/paigepro_background" >
+
+    <CheckBoxPreference
+        android:title="Music"
+        android:defaultValue="true"
+        android:key="checkbox"
+        android:summary="For Introduction Theme" />
+
+</PreferenceScreen>

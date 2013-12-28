@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/paigepro_background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/paigepro_background"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Create Event"
+                    android:textStyle="italic|bold"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textView" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Title:"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/tvEventTitle" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etEventTitle"
+                    android:maxLength="30"
+                    android:layout_marginLeft="77dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Description:"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/tvEventDescription" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etEventDescription"
+                    android:layout_marginLeft="20dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Location:"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/tvEventLocation" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etEventLocation"
+                    android:maxLength="30"
+                    android:layout_marginLeft="43dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Start Date:"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/tvEventStartDate" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etEventStartDateDay"
+                    android:maxLength="2"
+                    android:inputType="number"
+                    android:hint="DD"
+                    android:layout_marginLeft="31dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etEventStartDateMonth"
+                    android:hint="MM"
+                    android:maxLength="2"
+                    android:inputType="number"
+                    android:layout_marginLeft="10dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etEventStartDateYear"
+                    android:hint="YYYY"
+                    android:maxLength="4"
+                    android:inputType="number"
+                    android:layout_marginLeft="10dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="End Date:"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/tvEventEndDate" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etEventEndDateDay"
+                    android:maxLength="2"
+                    android:inputType="number"
+                    android:hint="DD"
+                    android:layout_marginLeft="40dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etEventEndDateMonth"
+                    android:hint="MM"
+                    android:maxLength="2"
+                    android:inputType="number"
+                    android:layout_marginLeft="10dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etEventEndDateYear"
+                    android:hint="YYYY"
+                    android:maxLength="4"
+                    android:inputType="number"
+                    android:layout_marginLeft="10dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Start Time:"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/tvEventStartTime" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etEventStartTimeHour"
+                    android:maxLength="30"
+                    android:hint="HH"
+                    android:inputType="number"
+                    android:layout_marginLeft="28dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etEventStartTimeMinute"
+                    android:maxLength="30"
+                    android:hint="MM"
+                    android:inputType="number"
+                    android:layout_marginLeft="10dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="End Time:"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/tvEventEndTime" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etEventEndTimeHour"
+                    android:maxLength="30"
+                    android:hint="HH"
+                    android:inputType="number"
+                    android:layout_marginLeft="38dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etEventEndTimeMinute"
+                    android:maxLength="30"
+                    android:hint="MM"
+                    android:inputType="number"
+                    android:layout_marginLeft="10dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_marginTop="40dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create Event"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/bCalendarEvent" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>
