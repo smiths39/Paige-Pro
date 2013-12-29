@@ -8,6 +8,8 @@
 
 package com.project.paigepro;
 
+import android.os.Environment;
+
 import java.io.File;
 import java.io.FilenameFilter;
 import java.util.ArrayList;
@@ -24,17 +26,24 @@ public class AudioContent {
 
 		File fileList = new File(SDCARD_PATH);
 
-		if (fileList.listFiles(new AudioFileExtension()).length > 0) {
+        if (fileList.exists()) {
 
-			for (File file : fileList.listFiles(new AudioFileExtension())) {
+    		if (fileList.listFiles(new AudioFileExtension()).length > 0) {
 
-                HashMap<String, String> songDetails = new HashMap<String, String>();
-				songDetails.put("songTitle", file.getName());
-				songDetails.put("songLocationPath", file.getPath());
+                for (File file : fileList.listFiles(new AudioFileExtension())) {
 
-				songsList.add(songDetails);
-			}
-		}
+                    HashMap<String, String> songDetails = new HashMap<String, String>();
+                    songDetails.put("songTitle", file.getName());
+                    songDetails.put("songLocationPath", file.getPath());
+
+                    songsList.add(songDetails);
+                }
+            }
+        } else {
+
+            File sdCardFolder = new File(Environment.getExternalStorageDirectory() + File.separator + "sdcard");
+            sdCardFolder.mkdirs();
+        }
 
 		return songsList;
 	}
