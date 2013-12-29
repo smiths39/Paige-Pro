@@ -17,14 +17,14 @@ import java.util.HashMap;
 
 public class AudioContent {
 
-	private String SDCARD_PATH = new String("/storage/emulated/0/sdcard/");
+	private String PAIGEPRO_PATH = new String("/storage/emulated/0/paigepro/");
 	private ArrayList<HashMap<String, String>> songsList = new ArrayList<HashMap<String, String>>();
 
 	public AudioContent(){}
 
 	public ArrayList<HashMap<String, String>> getPlayListContents() {
 
-		File fileList = new File(SDCARD_PATH);
+		File fileList = new File(PAIGEPRO_PATH);
 
         	if (fileList.exists()) {
 
@@ -41,7 +41,7 @@ public class AudioContent {
             		}
         	} else {
 
-	            File sdCardFolder = new File(Environment.getExternalStorageDirectory() + File.separator + "sdcard");
+	            File sdCardFolder = new File(Environment.getExternalStorageDirectory() + File.separator + "paigepro");
 	            sdCardFolder.mkdirs();
 	        }
 
