@@ -26,33 +26,33 @@ public class AudioContent {
 
 		File fileList = new File(SDCARD_PATH);
 
-        if (fileList.exists()) {
+        	if (fileList.exists()) {
 
-    		if (fileList.listFiles(new AudioFileExtension()).length > 0) {
+		    	if (fileList.listFiles(new AudioFileExtension()).length > 0) {
 
-                for (File file : fileList.listFiles(new AudioFileExtension())) {
+                		for (File file : fileList.listFiles(new AudioFileExtension())) {
 
-                    HashMap<String, String> songDetails = new HashMap<String, String>();
-                    songDetails.put("songTitle", file.getName());
-                    songDetails.put("songLocationPath", file.getPath());
+		                    HashMap<String, String> songDetails = new HashMap<String, String>();
+		                    songDetails.put("songTitle", file.getName());
+		                    songDetails.put("songLocationPath", file.getPath());
+		
+		                    songsList.add(songDetails);
+		                }
+            		}
+        	} else {
 
-                    songsList.add(songDetails);
-                }
-            }
-        } else {
-
-            File sdCardFolder = new File(Environment.getExternalStorageDirectory() + File.separator + "sdcard");
-            sdCardFolder.mkdirs();
-        }
+	            File sdCardFolder = new File(Environment.getExternalStorageDirectory() + File.separator + "sdcard");
+	            sdCardFolder.mkdirs();
+	        }
 
 		return songsList;
 	}
 	
 	private class AudioFileExtension implements FilenameFilter {
 
-        public boolean accept(File directory, String name) {
-
-            return (name.endsWith(".mp3") || name.endsWith(".MP3"));
+	        public boolean accept(File directory, String name) {
+	
+	            return (name.endsWith(".mp3") || name.endsWith(".MP3"));
 		}
 	}
 }
