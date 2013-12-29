@@ -13,9 +13,7 @@ The application provides access to the following features:<br />
 <b>Please note: </b><br />
 \* A minimute requirement of API 14 (Android version 4.0 or greater) is required for the successful functionality of this application.
         
-\* Ensure that a folder entitle 'sdcard' is created within your devices files<br />
->>  - Store .mp3 files within this folder in order to retrieve and play files within 
-      the Audio player feature of the application
+\* Store .mp3 files within the folder entitled 'paigepro' in order to retrieve and play files within the Audio player feature of the application
         
 \* All saved photos and videos will be stored within the folder entitled DCIM/Camera<br />
 >>  - Functionality is provided for the user to delete photo's via the application<br />
